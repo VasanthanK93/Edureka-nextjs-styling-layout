@@ -16,7 +16,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}> <header className="header">
+      <span>Next.js Blog</span>
+        <a className="link" href="/">Home</a>
+        <a className="link" href="/about">About</a>
+        <a className="link" href="/contact">Contact</a>
+    </header>{children}<footer className="footer">
+      <p className="footer-title">© 2023 Blog Name</p>
+    </footer></body>
     </html>
   )
 }
